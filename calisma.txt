@@ -1,0 +1,93 @@
+---  ------     --------------  ----- 
+ 0   age        40000 non-null  int64 -- dokunma
+age of customer (numeric)
+
+ 1   job        40000 non-null  object -- ohe
+type of job (categorical)
+                job    Ratio
+blue-collar    9383  23.4575
+management     8166  20.4150
+technician     6852  17.1300
+admin          4483  11.2075
+services       3910   9.7750
+retired        1437   3.5925
+self-employed  1414   3.5350
+entrepreneur   1405   3.5125
+unemployed     1104   2.7600
+housemaid      1087   2.7175
+student         524   1.3100
+unknown         235   0.5875
+
+
+
+2   marital    40000 non-null  object -- ohe
+ marital status (categorical)
+
+          marital    Ratio
+married     24386  60.9650
+single      10889  27.2225
+divorced     4725  11.8125
+
+ 3   education  40000 non-null  object - ohe
+education (categorical)
+
+           education    Ratio
+secondary      20993  52.4825
+tertiary       11206  28.0150
+primary         6270  15.6750
+unknown         1531   3.8275
+
+
+ 4   default    40000 non-null  object inbalance var - ohe 
+has credit in default? (binary)
+
+     default    Ratio
+no     39191  97.9775
+yes      809   2.0225
+
+ 5   balance    40000 non-null  int64 
+average yearly balance, in euros (numeric) -- ??? dummy degisken yapilabilir!
+
+ 6   housing    40000 non-null  object -- ohe
+: has a housing loan? (binary)
+
+     housing    Ratio
+yes    24031  60.0775
+no     15969  39.9225
+
+ 7   loan       40000 non-null  object - ohe
+has a housing loan? (binary)
+
+      loan   Ratio
+no   33070  82.675
+yes   6930  17.325
+
+ 8   contact    40000 non-null  object -- ohe
+ontact communication type (categorical)
+
+           contact    Ratio
+cellular     24914  62.2850
+unknown      12765  31.9125
+telephone     2321   5.8025
+
+
+
+ 9   day        40000 non-null  int64  -- ???
+
+ 10  month      40000 non-null  object -- ???
+last contact month of year (categorical)
+
+ 11  duration   40000 non-null  int64 -- ??? dummy degisken yapilabilir!
+last contact duration, in seconds (numeric)
+
+
+ 12  campaign   40000 non-null  int64 -- dummy degisken yapilabilir!
+number of contacts performed during this campaign and for this client (numeric, includes last contact) -- ???
+
+ 13  y          40000 non-null  object -- binary yapilmali;!
+dtypes: int64(5), object(9)
+ has the client subscribed to a term deposit? (binary)
+
+         y  Ratio
+no   37104  92.76
+yes   2896   7.24
